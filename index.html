@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introducción de datos</title>
+</head>
+<body>
+    <h1>Actividad Adicional de variables</h1>
+    <div class="btn-content">
+    <button onclick="myFunction()">Click para ingresar datos 😁</button>
+</div>
+    <p id="demo">
+        <p id="name"></p>
+        <p id="lastname"></p>
+        <p id="age"></p>
+    </p>
+    <script>
+        function myFunction(){
+            let nombre = prompt('Por favor ingresa tu nombre: ');
+            let apellido = prompt('Por favor ingresa tu apellido: ');
+            let edad = prompt('Por ultimo decinos tu edad: ')
+
+            let person = [nombre, apellido, edad];
+
+            if(person){
+                document.getElementById('demo').innerHTML = 'Te has registrado con los siguientes datos: ';
+                document.getElementById('name').innerHTML = 'Nombre: ' + nombre;
+                document.getElementById('lastname').innerHTML = 'Apellido: ' + apellido;
+                document.getElementById('age').innerHTML = 'Edad: ' + edad;
+            }
+        }
+    </script>
+</body>
+</html>

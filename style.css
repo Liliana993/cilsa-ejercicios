@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.btn-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 22px;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1;
+    line-height: 1.5em;
+}
+
+#demo{
+    text-decoration: underline pink;
+}
